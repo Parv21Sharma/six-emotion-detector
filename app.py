@@ -2,11 +2,13 @@ import streamlit as st
 import pickle
 import re
 import numpy as np
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from tensorflow.keras.preprocessing.text import one_hot
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import load_model
+nltk.download("stopwords")
 
 st.set_page_config(
     page_title="Six Emotion Detector",
