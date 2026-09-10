@@ -36,7 +36,6 @@ The application runs all four models on the same input sentence and provides a m
 
 | Model | Accuracy |
 |---|---:|
-| Multinomial Naive Bayes | ~65.5% |
 | Logistic Regression | ~82.9% |
 | Random Forest | ~84.8% |
 | Support Vector Machine | ~81.9% |
