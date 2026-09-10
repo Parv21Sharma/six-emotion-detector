@@ -26,7 +26,7 @@ with open("models/random_forest/random_forest.pkl", "rb") as file:
     random_forest = pickle.load(file)
 with open("models/svm/svm.pkl", "rb") as file:
     svm = pickle.load(file)
-lstm_model = load_model("models/lstm/lstm_model.keras")
+lstm_model = load_model("models/lstm/lstm_model.keras", compile=False)
 with open("models/lstm/vocab_info.pkl", "rb") as file:
     vocab_info = pickle.load(file)
 vocab_size = vocab_info["vocab_size"]
